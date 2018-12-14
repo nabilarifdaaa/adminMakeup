@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LayarEditProduk">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgAddPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/btAddPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAddPhotoId"
+            android:layout_centerHorizontal="true"
+
+            android:text="Pilih Foto" />
+
+        <TextView
+            android:id="@+id/tvIdProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddPhotoId"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:text="ID Produk :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtIdProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIdProduk"
+            android:layout_toRightOf="@+id/tvIdProduk"
+            android:hint="id produk"
+            android:enabled="false"/>
+
+
+        <TextView
+            android:id="@+id/tvedtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIdProduk"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="50dp"
+            android:text="Nama:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvedtNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvedtNama"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/tvedtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvedtNama"
+            android:textColor="#FFFFFF"
+            android:text="Jenis :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvedtJenis"
+            android:layout_alignLeft="@+id/edtNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvedtJenis"
+            android:hint="Jenis" />
+
+        <TextView
+            android:id="@+id/tvedtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvedtJenis"
+            android:textColor="#FFFFFF"
+            android:text="Harga :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvedtHarga"
+            android:layout_alignLeft="@+id/edtNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvedtHarga"
+            android:hint="Harga Produk"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvedtDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvedtHarga"
+            android:textColor="#FFFFFF"
+            android:text="Detail :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvedtDetail"
+            android:layout_alignLeft="@+id/edtNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvedtDetail"
+            android:hint="Detail"
+            android:inputType="text" />
+
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvedtDetail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Update"/>
+            <Button
+                android:id="@+id/btDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Delete"/>
+
+            <Button
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:hint="Pesan"
+            android:textColor="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>

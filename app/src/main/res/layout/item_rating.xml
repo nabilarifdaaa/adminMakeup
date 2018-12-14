@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvTanggalRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal Rating"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvIdRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Rating"
+            android:layout_below="@id/tvTanggalRating"
+            />
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvIdProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id Produk"
+            android:layout_below="@id/tvIdRating"
+            />
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvIdUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id User"
+            android:layout_below="@id/tvIdProduk"
+            />
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rating"
+            android:layout_below="@id/tvIdUser"
+            />
+        <TextView
+            android:textColor="@color/putih"
+            android:id="@+id/tvReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Review"
+            android:layout_below="@id/tvRating"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/mint"/>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post_put_del_produk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LayarInsertProduk">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imgAddPhotoId"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_user" />
+
+        <Button
+            android:id="@+id/btAddPhotoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAddPhotoId"
+            android:layout_centerHorizontal="true"
+
+            android:text="Pilih Foto" />
+
+        <TextView
+            android:id="@+id/tvAddNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btAddPhotoId"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="50dp"
+            android:text="Nama :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddNamaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddNama"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddNama"
+            android:hint="Nama" />
+
+        <TextView
+            android:id="@+id/tvAddJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddNama"
+            android:textColor="#FFFFFF"
+            android:text="Jenis :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddJenis"
+            android:layout_alignLeft="@+id/edtAddNamaProduk"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvJenis"
+            android:hint="Jenis Produk" />
+
+        <TextView
+            android:id="@+id/tvAddHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddJenis"
+            android:textColor="#FFFFFF"
+            android:text="Harga :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddHarga"
+            android:layout_alignLeft="@+id/edtAddNamaProduk"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddHarga"
+            android:hint="Harga Produk"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvAddDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddHarga"
+            android:textColor="#FFFFFF"
+            android:text="Detail :"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edtAddDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvAddDetail"
+            android:layout_alignLeft="@+id/edtAddNamaProduk"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvAddDetail"
+            android:hint="Detail Produk"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddDetail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btAddData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Insert"/>
+
+            <Button
+                android:id="@+id/btAddBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/LinearLayout"
+            android:hint="Pesan"
+            android:textColor="#FFFFFF"
+            android:inputType="textMultiLine"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+</ScrollView>

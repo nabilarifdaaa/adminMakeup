@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".LayarInsertRating">
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvIdProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Produk : "
+        android:textSize="20sp"/>
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvIdUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id User : "
+        android:layout_below="@id/tvIdProduk"
+        android:textSize="20sp"/>
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating : "
+        android:layout_below="@id/tvIdUser"
+        android:textSize="20sp"/>
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review : "
+        android:layout_below="@id/tvRating"
+        android:textSize="20sp"/>
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : "
+        android:layout_below="@id/tvReview"
+        android:textSize="20sp"/>
+    <EditText
+        android:textColor="@color/putih"
+        android:id="@+id/edtIdProduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="id produk"
+        android:layout_toRightOf="@+id/tvIdProduk"
+        android:layout_alignBaseline="@+id/tvIdProduk"/>
+    <EditText
+        android:id="@+id/edtIdUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="id user"
+        android:layout_alignBaseline="@+id/tvIdUser"
+        android:layout_alignLeft="@+id/edtIdProduk"/>
+    <EditText
+        android:id="@+id/edtRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="rating"
+        android:layout_alignBaseline="@+id/tvRating"
+        android:layout_alignLeft="@+id/edtIdProduk"
+        android:inputType="date"/>
+    <EditText
+        android:id="@+id/edtReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Review"
+        android:layout_alignBaseline="@+id/tvReview"
+        android:layout_alignLeft="@+id/edtIdProduk"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edtTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:layout_alignBaseline="@+id/tvTanggal"
+        android:layout_alignLeft="@+id/edtIdProduk"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvTanggal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/putih"
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Muncul disini"
+        android:layout_below="@+id/Linearlayout2"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"/>
+
+</RelativeLayout>
