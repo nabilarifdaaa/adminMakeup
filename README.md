@@ -1,5 +1,5 @@
 # Wardah Brand Makeup
-| Grup | 96 |
+| Grup | 06 |
 | :---------------: | :---------------:|
 | Dani Syahrul | 05 |
 | Nabila Rifda R | 20 |
